@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "SamsungOne";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/SamsungOne-400.woff2") format("woff2"),
+    url("../fonts/SamsungOne-400.woff") format("woff"),
+    url("../fonts/SamsungOne-400.eot?") format("eot");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SamsungOneBold";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/SamsungOne-800.woff2") format("woff2"),
+    url("../fonts/SamsungOne-800.woff") format("woff"),
+    url("../fonts/SamsungOne-800.eot?") format("eot");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Samsung Sharp Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/SamsungSharpSans-Bold.woff2") format("woff2"),
+    url("../fonts/SamsungSharpSans-Bold.woff") format("woff"),
+    url("../fonts/SamsungSharpSans-Bold.eot?") format("eot");
+    font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; 
+  font-weight: inherit;
+  margin: 0; 
+  padding: 0; 
+}
+
+.main-container {
+  display: flex;
+  background-color: #f7f7f7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: solid 1px #dddddd;
+  width: 100%;
+  max-width: 1440px;
+  height: 750px;
+  min-height: 750px;
+  max-height: 100lvh;
+  margin: 0 auto;
+  position: relative;
+  gap: 45px;
+}
+
+.main-container a {
+    text-decoration: none; 
+    color: black
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.title-text h1 {
+  font-family: "Samsung Sharp Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title-text p {
+  text-align: center;
+  text-edge: cap;
+  font-family: SamsungOne;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.models-cards-container {
+  display: flex;
+  gap: 40px;
+}
+
+.models-card {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 345px;
+  background-color: #eeeeee;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  transition: all 0.6s; 
+}
+
+.models-card:hover {
+  background-color: #dddddd;
+  border: solid 1px #bbbbbb;
+  transition: all 0.5s; 
+
+}
+
+.card-content img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.6s; 
+}
+.models-card:hover img {
+  transform: scale(1.095); 
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 47px;
+  margin-bottom: 40px;
+}
+
+.card-content p {
+  text-align: center;
+  font-family: SamsungOneBold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
